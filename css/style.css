@@ -57,3 +57,15 @@ footer #developer-mode{border:0;border-bottom:1px dashed rgba(255,79,163,.45);pa
 @media(max-width:599px){.memory-caption{position:static;padding:11px 10px;background:#100c12;color:#c9bdc7;opacity:1;transform:none}.final-content h2{font-size:clamp(2.7rem,15vw,4.2rem)}}
 @keyframes finalReveal{to{opacity:1;transform:none}}@keyframes finalHeartFloat{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}
 .terminal>h2{margin:24px 22px 0;font-size:clamp(1.25rem,5vw,1.8rem);letter-spacing:-.04em}.terminal>h2 span{color:var(--pink);animation:blink 1s infinite}.terminal-body{height:220px;padding-top:14px}
+
+
+/* Let the letter size itself naturally; never reserve an empty media-like box. */
+.letter-body{min-height:0}
+#typewriter-letter{min-height:0}
+.letter-photo:empty,.memory-photo:empty{display:none}
+
+/* Missing media stays out of the masonry flow until it has loaded. */
+.memory[hidden]{display:none!important}
+
+/* Comfortable thumb clearance on compact phones. */
+@media(max-width:599px){.music-toggle{right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));min-width:46px;height:46px;padding:0 12px}}

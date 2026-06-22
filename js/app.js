@@ -219,7 +219,7 @@
     'photo1.JPEG','photo2.JPEG','photo3.JPG','photo4.JPEG','photo5.JPG',
     'photo6.JPG','photo7.JPEG','photo8.JPEG','photo9.JPEG','photo10.JPEG'
   ];
-  const videoFiles = ['video1.mp4', 'video2.MOV'];
+  const videoFiles = ['video1.mp4'];
   const captions = [
     'Wonderla — the day we forgot our worries.',
     'A temple visit and another blessing to be grateful for.',
@@ -245,6 +245,7 @@
     galleryItems.forEach((item, index) => {
       const button = document.createElement('button');
       button.className = `memory${item.type === 'video' ? ' video' : ''}`;
+      button.hidden = item.type === 'video';
       button.setAttribute('aria-label', `Open memory ${index + 1}`);
       const src = `assets/photos/${item.file}`;
       let media;
@@ -259,7 +260,11 @@
         media.muted = true;
         media.preload = 'metadata';
         media.setAttribute('playsinline', '');
-        media.addEventListener('loadeddata', () => { media.currentTime = .1; }, { once: true });
+        media.addEventListener('loadeddata', () => {
+          media.currentTime = .1;
+          loaded++;
+          button.hidden = false;
+        }, { once: true });
       }
       media.src = src;
       media.onerror = () => { button.remove(); if (!loaded && !gallery.children.length) $('#gallery-empty').hidden = false; };

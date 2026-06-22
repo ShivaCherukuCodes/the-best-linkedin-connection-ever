@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09070c">
+  <meta name="description" content="A birthday surprise for Mamta — the best LinkedIn connection ever.">
+  <title>The Best LinkedIn Connection Ever ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+  <div class="noise" aria-hidden="true"></div>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+  <audio id="background-music" loop preload="auto">
+    <source src="assets/music/Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Mute background music" aria-pressed="false" hidden>
+    <span class="music-icon" aria-hidden="true">♫</span>
+    <span class="sound-waves" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="music-label">Music on</span>
+  </button>
+
+  <section id="password-screen" class="gate" aria-labelledby="gate-title">
+    <div class="gate-card">
+      <div class="window-bar"><span></span><span></span><span></span><p>birthday-surprise.exe</p></div>
+      <div class="gate-content">
+        <p class="eyebrow">// PRIVATE REPOSITORY</p>
+        <div class="lock-icon">♥</div>
+        <h1 id="gate-title">Authentication required</h1>
+        <p>Only the birthday girl has permission to access this little corner of the internet.</p>
+        <form id="password-form" novalidate>
+          <label for="password">Enter your DOB</label>
+          <div class="input-wrap">
+            <span>&gt;_</span>
+            <input id="password" type="password" inputmode="numeric" autocomplete="off" placeholder="DD-MM-YYYY or DD/MM/YYYY" aria-describedby="password-hint password-error">
+            <button type="button" id="toggle-password" aria-label="Show password">SHOW</button>
+          </div>
+          <p id="password-hint" class="hint">Hint: the day the world got a little brighter ✨</p>
+          <p id="password-error" class="error" role="alert"></p>
+          <button class="btn primary full" type="submit">Unlock surprise <span>→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="loader" class="loader" aria-live="polite" aria-label="Loading your surprise">
+    <div class="terminal">
+      <div class="window-bar"><span></span><span></span><span></span><p>shiva@heart:~/mamta</p></div>
+      <h2>Loading Memories<span>...</span></h2>
+      <div class="terminal-body" id="terminal-lines"></div>
+      <div class="progress"><i id="progress-bar"></i></div>
+      <p id="progress-label">0%</p>
+    </div>
+  </section>
+
+  <section id="access-denied" class="access-denied" aria-hidden="true" aria-labelledby="denied-title">
+    <div class="denied-hearts" aria-hidden="true"><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+    <div class="denied-card">
+      <p class="eyebrow">// HEART FIREWALL ACTIVATED</p>
+      <div class="heart-lock" aria-hidden="true"><span>♥</span><i>⌁</i></div>
+      <h2 id="denied-title">That date doesn’t<br><em>match our story.</em></h2>
+      <p>Some dates are simply remembered. One became special because it brought Mamta into this world—and made everything that followed possible.</p>
+      <code>try the date that made this story possible ❤️</code>
+      <button id="retry-password" class="btn primary" type="button">Try the magic date again <span>↻</span></button>
+    </div>
+  </section>
+
+  <main id="site" aria-hidden="true">
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="Home">S<span>♥</span>M</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      <nav aria-label="Main navigation">
+        <a href="#story">Story</a><a href="#memories">Memories</a><a href="#letter">Letter</a><a href="#cake">Wish</a><button id="logout-button" class="logout-button" type="button">Logout ↗</button>
+      </nav>
+    </header>
+
+    <section id="home" class="hero section">
+      <div class="hero-glow"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> CONNECTION STATUS: FOREVER</p>
+        <h1>The Best LinkedIn<br>Connection <em>Ever.</em> <span>❤️</span></h1>
+        <p class="hero-quote">“The best thing LinkedIn ever recommended wasn't a job. <strong>It was you.</strong>”</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#story">Run our_story.js <span>→</span></a>
+          <a class="text-link" href="#letter">Read my letter ↓</a>
+        </div>
+      </div>
+      <div class="hero-code reveal" aria-label="Code declaring love for Mamta">
+        <div class="window-bar"><span></span><span></span><span></span><p>love.java</p></div>
+        <pre><code><b>public class</b> <i>MyFavoritePerson</i> {
+  <b>String</b> name = <s>"Mamta Nagose"</s>;
+  <b>String</b> metOn = <s>"LinkedIn"</s>;
+  <b>boolean</b> forever = <u>true</u>;
+
+  <b>public String</b> future() {
+    <b>return</b> <s>"Mamta ❤️"</s>;
+  }
+}</code></pre>
+      </div>
+      <div class="scroll-cue"><span></span>SCROLL TO COMPILE</div>
+    </section>
+
+    <section class="first-memory section" aria-labelledby="first-memory-title">
+      <div class="first-memory-frame reveal">
+        <span class="photo-index">MEMORY_001.JPG</span>
+        <img src="assets/photos/photo10.JPEG" alt="Mamta in pink and Shiva in white during a temple visit" loading="eager">
+      </div>
+      <div class="first-memory-copy reveal">
+        <p class="eyebrow">// BEFORE THE TIMELINE</p>
+        <h2 id="first-memory-title">Before there were <span>memories...</span></h2>
+        <p>There was just one LinkedIn connection request.</p>
+      </div>
+    </section>
+
+    <section id="story" class="section story">
+      <div class="section-heading reveal"><p class="eyebrow">01 / OUR COMMIT HISTORY</p><h2>How we got <span>here.</span></h2><p>Some connections change your career. Ours changed everything.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-icon">in</div><div class="timeline-card"><time>FEBRUARY 2024</time><h3>LinkedIn Connection</h3><p>A simple connection request. Two professional profiles. Absolutely no warning that this would become my favorite story.</p><code>git commit -m "the beginning"</code></div></article>
+        <article class="timeline-item reveal"><div class="timeline-icon">{ }</div><div class="timeline-card"><time>MARCH 2024</time><h3>Java Sessions</h3><p>I helped you prepare for Java interviews. Somewhere between classes and objects, you became the object of all my affection.</p><code>mentor.mode = true;</code></div></article>
+        <article class="timeline-item reveal"><div class="timeline-icon">◉</div><div class="timeline-card"><time>MARCH 2024 &amp; BEYOND</time><h3>Google Meet Sessions</h3><p>Meet links, shared screens, questions, laughter—and calls I secretly wished would never end.</p><code>call.duration = Infinity;</code></div></article>
+        <article class="timeline-item featured reveal"><div class="timeline-icon">♥</div><div class="timeline-card"><time>12 FEBRUARY 2024</time><h3>First Meeting</h3><p>The day pixels became a person, and the person became my whole world. Best production release ever.</p><code>status: life_changed_successfully</code></div></article>
+        <article class="timeline-item reveal"><div class="timeline-icon">➜</div><div class="timeline-card"><time>2024 — PRESENT</time><h3>Rides &amp; Temple Visits</h3><p>Long bike rides through Hyderabad, peaceful temple visits, and a thousand tiny memories between each destination.</p><code>route.destination = "together";</code></div></article>
+        <article class="timeline-item reveal"><div class="timeline-icon">✦</div><div class="timeline-card"><time>25 JUNE 2026</time><h3>Birthday Surprise</h3><p>A small website for the person who occupies the largest part of my heart.</p><code>celebrate(Mamta);</code></div></article>
+      </div>
+    </section>
+
+    <section class="section jokes">
+      <div class="section-heading reveal"><p class="eyebrow">02 / DEVELOPER HUMOR</p><h2>Love, but make it <span>code.</span></h2></div>
+      <div class="code-grid">
+        <article class="code-card reveal"><div class="code-number">01</div><pre><code><b>if</b> (Mamta == <u>null</u>) {
+  happiness = <u>0</u>;
+}</code></pre><p>NullPointerException? More like NoMamtaException.</p></article>
+        <article class="code-card reveal"><div class="code-number">02</div><pre><code><b>while</b> (<u>true</u>) {
+  thinkAbout(Mamta);
+}</code></pre><p>Infinite loop. Won't fix. Working as intended.</p></article>
+        <article class="code-card reveal"><div class="code-number">03</div><pre><code><b>public String</b> future() {
+  <b>return</b> <s>"Mamta ❤️"</s>;
+}</code></pre><p>Zero bugs. One very clear roadmap.</p></article>
+      </div>
+    </section>
+
+    <section class="section mamta-class">
+      <div class="section-heading reveal"><p class="eyebrow">03 / FAVORITE CLASS</p><h2>Meet <span>Mamta.exe</span></h2></div>
+      <div class="mamta-terminal reveal">
+        <div class="window-bar"><span></span><span></span><span></span><p>Mamta.java</p></div>
+        <pre><code><b>public class</b> <i>Mamta</i> {
+
+  <b>String</b> smile = <s>"Beautiful"</s>;
+  <b>int</b> kindness = Integer.<u>MAX_VALUE</u>;
+  <b>boolean</b> supportsShiva = <u>true</u>;
+  <b>String</b> role = <s>"Favorite Person"</s>;
+}</code></pre>
+        <p>Best class ever created. <span>♥</span></p>
+      </div>
+    </section>
+
+    <section id="memories" class="section memories">
+      <div class="section-heading reveal"><p class="eyebrow">04 / MEMORY DATABASE</p><h2>Moments worth <span>saving.</span></h2><p>No cloud backup needed. These are permanently stored in my heart.</p></div>
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+      <div id="gallery-empty" class="gallery-empty" hidden><span>＋</span><h3>Memories loading soon</h3><p>Add photos named photo1, photo2… inside <code>assets/photos/</code>.</p></div>
+    </section>
+
+    <section class="section stats">
+      <div class="section-heading reveal"><p class="eyebrow">05 / SYSTEM METRICS</p><h2>Love <span>analytics.</span></h2></div>
+      <div class="stats-grid reveal">
+        <div><strong>1</strong><span>Best LinkedIn Connection</span></div>
+        <div><strong class="stat-date">12-Feb-2024</strong><span>Favorite Commit</span></div>
+        <div><strong>∞</strong><span>Future memories</span></div>
+        <div><strong>100%</strong><span>Favorite Person</span></div>
+      </div>
+    </section>
+
+    <section id="letter" class="section letter">
+      <div class="letter-shell reveal">
+        <div class="letter-meta"><p class="eyebrow">06 / A LETTER FOR YOU</p><span>mamta_letter.md</span></div>
+        <div class="letter-body">
+          <p class="salutation">Dear Mamta,</p>
+          <div id="typewriter-letter" data-text="I started out explaining Java concepts to you, never knowing you would teach me the most beautiful lesson of all—how extraordinary life feels when the right person enters it.\n\nFrom LinkedIn messages to Google Meets, from our first meeting to every long ride and quiet temple visit, you turned ordinary days into memories I replay with a smile.\n\nYour courage, warmth, laughter, and wonderfully stubborn spirit make my world brighter. On your birthday, I hope you see yourself the way I see you: capable, rare, and deeply loved.\n\nHere’s to every road we haven’t taken yet, every dream waiting to compile, and every version of our future—together.\n\nThank you for trusting the guy who once explained Java concepts on Google Meet. He never expected that his favorite student would become his favorite person."></div>
+          <p class="signature">Always yours,<br><strong>Shiva</strong> <span>♥</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap">
+      <div class="section-heading reveal"><p class="eyebrow">07 / FUTURE ROADMAP</p><h2>Upcoming <span>releases.</span></h2></div>
+      <div class="roadmap-list">
+        <article class="reveal"><span>v2.0</span><div><h3>More spontaneous rides</h3><p>Destination optional. You, mandatory.</p></div><i>PLANNED</i></article>
+        <article class="reveal"><span>v3.0</span><div><h3>New places, same us</h3><p>Collecting sunsets, stories, and terrible selfies.</p></div><i>IN PROGRESS</i></article>
+        <article class="reveal"><span>v∞</span><div><h3>A lifetime of birthdays</h3><p>Annual upgrades. Forever support included.</p></div><i class="pink">FOREVER</i></article>
+      </div>
+    </section>
+
+    <section id="cake" class="section cake-section">
+      <div class="section-heading reveal"><p class="eyebrow">08 / MAKE A WISH</p><h2>One last <span>interaction.</span></h2><p>Tap the flame, close your eyes, and make it count.</p></div>
+      <div class="cake-wrap reveal">
+        <button id="flame" class="flame" aria-label="Blow out the candle"><i></i></button>
+        <div class="candle"><span></span></div>
+        <div class="cake-top"><span>Happy Birthday Mamta</span></div>
+        <div class="cake-layer layer-one"></div><div class="cake-layer layer-two"></div><div class="cake-plate"></div>
+        <p id="cake-hint">↑ TAP THE FLAME TO MAKE A WISH</p>
+      </div>
+    </section>
+
+    <section id="final-surprise" class="final-surprise" aria-hidden="true">
+      <button id="close-final" aria-label="Close message">×</button>
+      <div class="final-hearts" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+      <div class="final-content">
+        <p class="eyebrow">WISH SUCCESSFULLY DEPLOYED ❤️</p>
+        <div class="big-heart">♥</div>
+        <h2>Thank You<br><span>Mamta ❤️</span></h2>
+        <p>Out of all the people I could have met,<br>I’m grateful life introduced me to you.</p>
+        <div class="final-commit"><code>$ git commit -m "best_linkedin_connection_ever"</code><span>Commit successful ❤️</span></div>
+        <h3>Happy Birthday Mamta 🎂</h3>
+        <strong>— Shiva Kumar</strong>
+      </div>
+    </section>
+
+    <footer><p>Designed &amp; coded with <span>♥</span> by Shiva, exclusively for Mamta.</p><button id="developer-mode" type="button">&gt; Developer Mode_</button><code>© <span id="year"></span> • NO RIGHTS RESERVED, ONLY LOVE</code></footer>
+  </main>
+
+  <dialog id="lightbox" aria-label="Memory viewer">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">×</button>
+    <button id="lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous memory">‹</button>
+    <div id="lightbox-content"></div>
+    <button id="lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next memory">›</button>
+    <div class="lightbox-meta"><p id="lightbox-caption"></p><span id="lightbox-count"></span></div>
+  </dialog>
+  <dialog id="developer-dialog" class="developer-dialog" aria-label="Future git log">
+    <button id="close-developer" aria-label="Close developer mode">×</button>
+    <div class="window-bar"><span></span><span></span><span></span><p>future.log</p></div>
+    <div class="future-log"><p>$ git log --future</p><code><span>feat:</span> more rides<br><span>feat:</span> more temple visits<br><span>feat:</span> more laughter<br><span>feat:</span> more birthdays<br><span>feat:</span> forever ❤️</code><strong>5 future commits found.</strong></div>
+  </dialog>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="js/app.js"></script>
+</body>
+</html>
